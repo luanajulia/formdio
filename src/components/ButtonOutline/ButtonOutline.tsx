@@ -1,14 +1,8 @@
 import { styled } from "@mui/material"
 import type { ReactNode } from "react"
+import { useNavigate } from "react-router-dom";
 
-interface ButtonOutlineProps {
-    children: ReactNode
-    onClick: () => void
-}
-
-const ButtonOutline: React.FC<ButtonOutlineProps> = ({ children, onClick }) => {
-    
-    const ButtonOutline = styled("button")(({ theme }) => ({
+const ButtonOutline = styled("button")(({ theme }) => ({
         backgroundColor: "#E4105D",         
         color: "#FFFFFF",                
         padding: "12px 36px",            
@@ -29,13 +23,19 @@ const ButtonOutline: React.FC<ButtonOutlineProps> = ({ children, onClick }) => {
             backgroundColor: "#c70d4f",
             borderColor: "#c70d4f",
         }
-    }))
+    }));
 
-    return (
-    <>
-        <ButtonOutline onClick={onClick} >{ children }</ButtonOutline>
-    </>
-  )
+interface StyledButtonsProp extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  to: string;
 }
 
-export default ButtonOutline
+
+export const BtnOutline = ({ to, children, ...props }: StyledButtonsProp) => {
+  const navigate = useNavigate();
+
+  return (
+    <ButtonOutline onClick={() => navigate(to)} {...props}>
+      {children}
+    </ButtonOutline>
+  );
+};

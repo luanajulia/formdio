@@ -1,5 +1,5 @@
 import { Box, styled, AppBar, Toolbar, colors, Grid, FormControl, FormHelperText, InputLabel, Input } from "@mui/material"; 
-import ButtonOutline from "../../../../components/ButtonOutline/ButtonOutline";
+import  { BtnOutline } from "../../../../components/ButtonOutline/ButtonOutline";
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 
@@ -53,7 +53,7 @@ const Paragrafo = () => {
                         <Input id="senha" type="password" sx={{ color: "#fff", pt: "20px" }} />
                     </FormControl>
 
-                    <ButtonOutline onClick={() => {}}>Começar Agora</ButtonOutline>
+                    <BtnOutline to="/userhome">Começar Agora</BtnOutline>
                 </StyledInfo>
                 <Box sx={{ display: "flex", justifyContent: "space-between", mt: 3 }}>
                     <p style={{ color: "#E5E044", margin: 0, cursor: "pointer" }}><strong>Esqueci minha senha</strong></p>

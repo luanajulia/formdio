@@ -1,6 +1,6 @@
 import { Box, styled, AppBar, Toolbar, colors, Grid } from "@mui/material"; 
 import image_info from "../../../../assets/info.svg";
-import ButtonOutline from "../../../../components/ButtonOutline/ButtonOutline";
+import {BtnOutline} from "../../../../components/ButtonOutline/ButtonOutline";
 
 const Infos = () => {
     const StyledInfo = styled("div")(({ theme }) => ({
@@ -25,7 +25,7 @@ const Infos = () => {
                     <Styledh style={{ color: "#fff" }}>o seu futuro global agora!</Styledh>
                     <p style={{ color: "#fff", fontSize: "18px" }}>Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo desafio profissional, evoluindo em comunidade com os melhores experts.</p>
                 </StyledInfo>
-                <ButtonOutline onClick={() => {}}>Comecar Agora</ButtonOutline>
+                <BtnOutline to="/login">Comecar Agora</BtnOutline>
             </Grid>
             <Grid size={{ xs: 12, md: 7 }} style={{ paddingRight: "50px" }}>
                 <img src={image_info} alt="infos" style={{ width: "100%" }} />

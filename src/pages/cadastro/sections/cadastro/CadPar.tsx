@@ -1,5 +1,5 @@
 import { Box, styled, AppBar, Toolbar, colors, Grid, FormControl, FormHelperText, InputLabel, Input } from "@mui/material"; 
-import ButtonOutline from "../../../../components/ButtonOutline/ButtonOutline";
+import { BtnOutline } from "../../../../components/ButtonOutline/ButtonOutline";
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 import PersonIcon from '@mui/icons-material/Person';
@@ -64,7 +64,7 @@ const CadPar = () => {
                         <Input id="senha" type="password" sx={{ color: "#fff", pt: "20px" }} />
                     </FormControl>
 
-                    <ButtonOutline onClick={() => {}}>Começar Agora</ButtonOutline>
+                    <BtnOutline to="/userhome">Começar Agora</BtnOutline>
                 </StyledInfo>
                 <p style={{ color: "#fff", margin: "30px 0 10px 0", fontSize: "18px" }}>
                     Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.
