@@ -1,7 +1,7 @@
 # Formulário de Cadastro — Plataforma DIO 🚀
 
 Este projeto foi desenvolvido como parte do curso de **React.js** da **Digital Innovation One (DIO)**.  
-O objetivo é criar um **formulário de cadastro funcional**, aplicando conceitos fundamentais de React, como componentes, estados e manipulação de eventos.
+O objetivo é criar um **layout de formulario de cadastro **, aplicando conceitos fundamentais de React, como componentes, estados e manipulação de eventos.
 
 ---
 
@@ -12,19 +12,7 @@ O objetivo é criar um **formulário de cadastro funcional**, aplicando conceito
 - **Styled Components** — Para estilização dos componentes.
 
 
----
-
-## ⚙️ Funcionalidades
-
-✅ Cadastro de usuário com campos:
-- Nome completo  
-- E-mail  
-- Senha  
-
-✅ Validação dos campos obrigatórios  
-✅ Exibição de mensagens de erro  
-✅ Botão de envio com feedback visual  
-✅ Layout responsivo e minimalista  
+ 
 
 ---
 
